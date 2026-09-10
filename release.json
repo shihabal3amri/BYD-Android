@@ -1,0 +1,13 @@
+{
+  "file": "BYD-Android_9.16.1_v2.1.apk",
+  "sha256": "72acb292b37a13b8351e4f5570d656b71f18f27c6fb624666806024c89145844",
+  "bytes": 373776939,
+  "version": "9.16.1",
+  "versionCode": 561,
+  "featureVersion": "2.1",
+  "package": "com.byd.aeri.caranywhere",
+  "signerCertificateSha256": "d0f77a0076d31792c46188b1af319a37ffdddda23e778213852b17461668fa3f",
+  "tag": "v9.16.1-v2.1",
+  "title": "BYD Android 9.16.1 · Walk-up Unlock v2.1",
+  "status": "public"
+}

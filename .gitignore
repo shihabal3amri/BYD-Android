@@ -1,0 +1,10 @@
+*.apk
+*.idsig
+*.jks
+*.keystore
+*.log
+.env*
+__pycache__/
+*.pyc
+.DS_Store
+preview-responsive.html

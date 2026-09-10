@@ -1,0 +1,53 @@
+:root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #19202b; background: #f5f6f8; }
+* { box-sizing: border-box; }
+body { margin: 0; line-height: 1.65; }
+main { max-width: 900px; margin: auto; padding: 48px 24px 40px; }
+header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; margin-bottom: 32px; }
+.brand { display: flex; align-items: center; gap: 16px; }
+.brand > div { min-width: 0; }
+.languages { display: inline-flex; flex-wrap: wrap; gap: 4px; padding: 4px; border: 1px solid #cbd0d8; border-radius: 12px; background: white; }
+.languages a { display: inline-flex; align-items: center; justify-content: center; padding: 8px 12px; min-height: 44px; color: #414a59; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600; }
+.languages a[aria-current="page"] { color: #a40012; background: #fee9ec; box-shadow: inset 0 0 0 1px #e4aab2; }
+header img { width: 64px; height: 64px; border-radius: 16px; }
+header p { margin: 0; font-size: 14px; color: #515968; }
+header strong { font-size: 20px; letter-spacing: -.4px; }
+.badge { display: inline-block; padding: 4px 10px; border-radius: 6px; background: #fee9ec; color: #a40012; font-size: 12px; font-weight: 700; letter-spacing: .7px; }
+h1 { font-size: clamp(32px, 6vw, 48px); line-height: 1.14; letter-spacing: -1.5px; margin: 18px 0 14px; }
+.intro { font-size: 19px; color: #515968; max-width: 680px; }
+h2 { margin: 0 0 12px; font-size: 22px; line-height: 1.35; letter-spacing: -.4px; }
+a { color: #b00013; text-underline-offset: 3px; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 26px 0 14px; }
+.button { display: inline-flex; justify-content: center; align-items: center; gap: 8px; min-height: 48px; padding: 12px 20px; text-decoration: none; border-radius: 10px; background: #d40016; color: white; font-size: 16px; font-weight: 650; border: 1px solid #d40016; cursor: pointer; }
+.button.secondary { background: white; color: #232a36; border-color: #cbd0d8; }
+.button:focus-visible, a:focus-visible, textarea:focus-visible { outline: 3px solid #1166dd; outline-offset: 4px; }
+.button:hover { filter: brightness(.94); }
+.languages a:hover, .tutorial:hover { background: #fff1f3; }
+.tutorials { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.tutorial { display: flex; flex-direction: column; justify-content: center; padding: 16px; border: 1px solid #cbd0d8; border-radius: 10px; text-decoration: none; }
+.tutorial span { font-size: 14px; color: #515968; }
+section[id] { scroll-margin-top: 24px; }
+.note { color: #515968; font-size: 14px; }
+.card { margin-top: 28px; padding: 26px; border: 1px solid #e0e3e9; border-radius: 16px; background: white; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+.grid .card { margin-top: 28px; }
+ol, ul { padding-inline-start: 22px; margin: 10px 0; }
+li { padding: 3px 0; }
+textarea { display: block; width: 100%; min-height: 90px; font: 13px/1.6 ui-monospace, SFMono-Regular, Consolas, monospace; color: #253047; background: #f5f6f8; border: 1px solid #cbd0d8; border-radius: 8px; padding: 12px; resize: vertical; overflow-wrap: anywhere; }
+.copyrow { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 12px; }
+.copyrow button { font-size: 14px; min-height: 42px; padding: 8px 15px; }
+.gallery { margin-top: 32px; }
+.screens { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; margin-top: 20px; }
+.screens figure { min-width: 0; margin: 0; }
+.screens a { display: block; border-radius: 18px; }
+.screens img { display: block; width: 100%; height: auto; border: 1px solid #e0e3e9; border-radius: 18px; }
+.screens figcaption { margin-top: 10px; color: #515968; font-size: 13px; line-height: 1.45; }
+.screens figcaption strong { display: block; color: #19202b; font-size: 14px; margin-bottom: 3px; }
+footer { margin-top: 34px; padding-top: 20px; border-top: 1px solid #dddfe5; color: #515968; font-size: 13px; }
+footer a { color: #414a59; }
+html[dir="rtl"] { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, Arial, sans-serif; }
+html[dir="rtl"] body { line-height: 1.85; }
+html[dir="rtl"] h1 { line-height: 1.4; }
+html[dir="rtl"] h1, html[dir="rtl"] h2, html[dir="rtl"] .badge, html[dir="rtl"] header strong { letter-spacing: normal; }
+html[dir="rtl"] .screens figcaption { line-height: 1.75; }
+@media (max-width: 420px) { .tutorials { grid-template-columns: 1fr; } .languages { width: 100%; } .languages a { flex: 1; padding-inline: 8px; } }
+@media (max-width: 580px) { main { padding: 28px 18px; } .grid { grid-template-columns: 1fr; gap: 0; } .card { padding: 20px; } .actions a { width: 100%; } .screens { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 14px; } }

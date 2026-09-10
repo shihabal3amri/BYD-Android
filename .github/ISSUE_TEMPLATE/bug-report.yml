@@ -1,0 +1,54 @@
+name: Report a problem / الإبلاغ عن مشكلة / Сообщить о проблеме
+description: Report installation, translation, Bluetooth, Walk-up unlock or camera problems.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        English, العربية and Русский are welcome.
+        Do not include passwords, tokens, full VINs or precise locations. Remove personal details from screenshots and logs.
+  - type: input
+    id: version
+    attributes:
+      label: App release / إصدار التطبيق / Версия приложения
+      placeholder: "BYD 9.16.1 · Walk-up Unlock v2.1"
+    validations:
+      required: true
+  - type: input
+    id: phone
+    attributes:
+      label: Phone and Android version / الهاتف وإصدار Android / Телефон и Android
+      placeholder: "Samsung S25 Ultra, Android 16, One UI…"
+    validations:
+      required: true
+  - type: input
+    id: car
+    attributes:
+      label: Car model and year / طراز السيارة وسنتها / Модель и год авто
+      placeholder: "Han L EV, 2025 — no VIN needed"
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected feature / الميزة / Функция
+      options:
+        - Installation or crash
+        - Walk-up unlock or walk-away lock
+        - Background detection setup
+        - Manual Bluetooth key
+        - Surround View / Eagle Eye
+        - Translation or layout
+        - Another feature
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened? / ماذا حدث؟ / Что произошло?
+      description: Include steps, expected behavior, what actually happened and approximate time with timezone.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Helpful details / تفاصيل مفيدة / Полезные сведения
+      description: For Bluetooth issues, does the manual key work offline? Was the screen locked, phone in a pocket, app in background? For camera issues, did reopening or Retry work? Attach redacted screenshots if useful.

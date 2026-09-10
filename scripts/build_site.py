@@ -43,7 +43,7 @@ def main():
 <section class="card" aria-labelledby="feedback-heading"><h2 id="feedback-heading">{esc(c['compatTitle'])}</h2><p>{esc(c['compat'])}</p><p class="note">{esc(c['limitations'])}</p><p class="note">{esc(c['feedback'])}</p><a class="button secondary" href="{ISSUES}">{esc(c['report'])}</a></section></div>
 <footer><p><a href="{REPO}/blob/main/{c['readme']}">{esc(c['repository'])}</a> · <a href="{release_url}">{esc(c['notes'])}</a> · <a href="https://shihabal3amri.github.io/BYD-iOS/">{esc(c['ios'])}</a></p><p>{esc(c['footer'])}</p></footer>
 </main></body></html>'''
-        dest=ROOT/sub;dest.mkdir(parents=True,exist_ok=True);(dest/'index.html').write_text(page+'\n',encoding='utf-8')
+        dest=ROOT/sub;dest.mkdir(parents=True,exist_ok=True);(dest/'index.html').write_text(page+'\n',encoding='utf-8',newline='\n')
         bullets=lambda key:'\n'.join('- '+v for v in c[key])
         steps=lambda key:'\n'.join(f'{i}. {v}' for i,v in enumerate(c[key],1))
         readme=f'''# BYD Android Localized
@@ -109,8 +109,8 @@ original BYD app source, signing keys, user logs or account data.
 
 {c['footer']}
 '''
-        (ROOT/c['readme']).write_text(readme,encoding='utf-8')
+        (ROOT/c['readme']).write_text(readme,encoding='utf-8',newline='\n')
         notes.append(f"## {label}\n\n{c['notesIntro']}\n\n{bullets('features')}\n\n{c['updateNote']}\n\n{c['original']}\n\n[{c['installLink']}]({SITE}{sub}#install) · [{c['report']}]({ISSUES})\n")
-    (ROOT/'CHANGELOG.md').write_text(f"# {release['title']}\n\n"+'\n'.join(notes),encoding='utf-8')
+    (ROOT/'CHANGELOG.md').write_text(f"# {release['title']}\n\n"+'\n'.join(notes),encoding='utf-8',newline='\n')
     print('Rendered EN, AR, RU pages, READMEs and release notes')
 if __name__=='__main__':main()

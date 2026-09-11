@@ -23,7 +23,7 @@ def main():
     for sub,lang in [('', 'en'),('ar','ar'),('ru','ru')]:
         f=ROOT/sub/'index.html';s=f.read_text(encoding='utf-8');p=Page();p.feed(s)
         assert p.lang==lang and p.direction==('rtl' if lang=='ar' else 'ltr')
-        assert p.downloads==[expected] and p.images==5
+        assert p.downloads==[expected] and p.images==5+len(json.loads((ROOT/'supporters.json').read_text(encoding='utf-8')))
         assert not re.search(r'AltStore|Impactor|\.ipa|altstore:|Compatibility test build|PUBLIC BETA',s,re.I)
         for link in p.links:
             u=urlsplit(link)

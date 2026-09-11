@@ -6,11 +6,28 @@ REPO='https://github.com/shihabal3amri/BYD-Android'
 SITE='https://shihabal3amri.github.io/BYD-Android/'
 ISSUES=REPO+'/issues/new?template=bug-report.yml'
 def esc(v):return html.escape(str(v),quote=True)
+
+def render_supporters(items, content, prefix):
+    esc = lambda value: html.escape(str(value), quote=True)
+    cards = []
+    for item in items:
+        cards.append(f'''<li><a class="supporter" href="{esc(item['url'])}" target="_blank" rel="noopener noreferrer">
+<img class="supporter-logo" src="{prefix}{esc(item['logo'])}" width="{item['width']}" height="{item['height']}" alt="{esc(item['name'])}" loading="lazy">
+<div class="supporter-info"><span class="supporter-label">{esc(content['supporter_label'])}</span><h3><bdi dir="ltr">{esc(item['name'])}</bdi></h3></div>
+<span class="supporter-follow">{esc(content['supporter_follow'])}<span aria-hidden="true">↗</span></span>
+</a></li>''')
+    return f'''<section class="supporters" id="supporters" aria-labelledby="supporters-heading">
+<h2 id="supporters-heading">{esc(content['supporters_heading'])}</h2>
+<p>{esc(content['supporters_intro'])}</p>
+<ul class="supporter-list">{''.join(cards)}</ul>
+</section>'''
+
 def main():
     release=json.loads((ROOT/'release.json').read_text(encoding='utf-8'))
     tag=release['tag'];download=REPO+'/releases/download/'+tag+'/'+release['file']
     release_url=REPO+'/releases/tag/'+tag
     languages=[('en','English',''),('ar','العربية','ar/'),('ru','Русский','ru/')]
+    supporters=json.loads((ROOT/'supporters.json').read_text(encoding='utf-8'))
     notes=[]
     for lang,label,sub in languages:
         c=json.loads((ROOT/'content'/f'{lang}.json').read_text(encoding='utf-8'));prefix='../' if sub else ''
@@ -41,6 +58,7 @@ def main():
 <section class="card" id="walkup" aria-labelledby="walkup-heading"><h2 id="walkup-heading">{esc(c['setupTitle'])}</h2><ol>{lis('setupSteps')}</ol><p class="note">{esc(c['setupNote'])}</p></section>
 <div class="grid"><section class="card" aria-labelledby="release-heading"><h2 id="release-heading">{esc(c['newTitle'])}</h2><ul>{lis('features')}</ul><a href="{release_url}">{esc(c['notes'])}</a></section>
 <section class="card" aria-labelledby="feedback-heading"><h2 id="feedback-heading">{esc(c['compatTitle'])}</h2><p>{esc(c['compat'])}</p><p class="note">{esc(c['limitations'])}</p><p class="note">{esc(c['feedback'])}</p><a class="button secondary" href="{ISSUES}">{esc(c['report'])}</a></section></div>
+{render_supporters(supporters, c, prefix)}
 <footer><p><a href="{REPO}/blob/main/{c['readme']}">{esc(c['repository'])}</a> · <a href="{release_url}">{esc(c['notes'])}</a> · <a href="https://shihabal3amri.github.io/BYD-iOS/">{esc(c['ios'])}</a></p><p>{esc(c['footer'])}</p></footer>
 </main></body></html>'''
         dest=ROOT/sub;dest.mkdir(parents=True,exist_ok=True);(dest/'index.html').write_text(page+'\n',encoding='utf-8',newline='\n')

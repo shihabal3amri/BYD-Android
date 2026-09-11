@@ -51,3 +51,16 @@ html[dir="rtl"] h1, html[dir="rtl"] h2, html[dir="rtl"] .badge, html[dir="rtl"] 
 html[dir="rtl"] .screens figcaption { line-height: 1.75; }
 @media (max-width: 420px) { .tutorials { grid-template-columns: 1fr; } .languages { width: 100%; } .languages a { flex: 1; padding-inline: 8px; } }
 @media (max-width: 580px) { main { padding: 28px 18px; } .grid { grid-template-columns: 1fr; gap: 0; } .card { padding: 20px; } .actions a { width: 100%; } .screens { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 14px; } }
+
+.supporters { margin-top: 36px; }
+.supporters > p { margin: 0 0 20px; color: #515968; }
+.supporter-list { display: grid; gap: 16px; list-style: none; padding: 0; margin: 0; }
+.supporter-list > li { padding: 0; min-width: 0; }
+.supporter { display: grid; grid-template-columns: 144px minmax(0, 1fr) auto; align-items: center; gap: 24px; padding: 24px; border: 1px solid #e0e3e9; border-radius: 16px; background: white; color: #19202b; text-decoration: none; }
+.supporter:hover { border-color: #d40016; }
+.supporter-logo { display: block; width: 144px; height: 110px; object-fit: contain; border-radius: 8px; }
+.supporter-info { min-width: 0; }
+.supporter-label { display: block; font-size: 14px; color: #515968; }
+.supporter h3 { margin: 3px 0 0; font-size: 24px; line-height: 1.5; }
+.supporter-follow { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 10px 16px; border: 1px solid #e4aab2; border-radius: 10px; background: #fff1f3; color: #a40012; font-size: 14px; font-weight: 650; text-align: center; }
+@media (max-width: 700px) { .supporter { grid-template-columns: 108px minmax(0, 1fr); gap: 16px; padding: 20px; } .supporter-logo { width: 108px; height: 83px; } .supporter-follow { grid-column: 1 / -1; } }

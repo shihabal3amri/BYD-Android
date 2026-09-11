@@ -1,4 +1,8 @@
 {
+  "supporters_heading": "Our supporters",
+  "supporters_intro": "Thank you to the communities supporting this project.",
+  "supporter_label": "Community supporter",
+  "supporter_follow": "Follow the community",
   "lang": "en", "dir": "ltr", "readme": "README.md",
   "title": "BYD Android Localized · Download",
   "description": "Download the localized BYD Android app in English, Arabic and Russian, with Walk-up Unlock v2.1, distance calibration and optional walk-away locking.",

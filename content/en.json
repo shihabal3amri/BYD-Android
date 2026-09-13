@@ -51,5 +51,8 @@
   "footer": "Unofficial project, not affiliated with or endorsed by BYD. BYD’s original application and assets belong to their respective owners.",
   "releaseTitle": "BYD Android 9.16.1 · Walk-up Unlock v2.1",
   "notesIntro": "Public release of the localized BYD Android app. Download the APK below or use the download page.",
-  "checksum": "Downloads and verification", "maintainer": "Maintaining this download page"
+  "checksum": "Downloads and verification", "maintainer": "Maintaining this download page",
+  "telegram_heading": "Get release updates",
+  "telegram_intro": "Subscribe to our Telegram channel and turn on notifications to hear when a new version is released.",
+  "telegram_subscribe": "Subscribe on Telegram"
 }

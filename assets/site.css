@@ -28,6 +28,11 @@ a { color: #b00013; text-underline-offset: 3px; }
 section[id] { scroll-margin-top: 24px; }
 .note { color: #515968; font-size: 14px; }
 .card { margin-top: 28px; padding: 26px; border: 1px solid #e0e3e9; border-radius: 16px; background: white; }
+.release-updates { display: flex; align-items: center; flex-wrap: wrap; gap: 20px; }
+.release-updates > div { flex: 1 1 280px; min-width: 0; }
+.release-updates h2 { margin-bottom: 8px; }
+.release-updates p { margin: 0; }
+.release-updates > a { flex: 0 1 auto; text-align: center; }
 .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
 .grid .card { margin-top: 28px; }
 ol, ul { padding-inline-start: 22px; margin: 10px 0; }

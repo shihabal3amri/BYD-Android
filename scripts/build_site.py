@@ -53,6 +53,10 @@ def main():
 <h1>{c['headline']}</h1><p class="intro">{esc(c['intro'])}</p>
 <div class="actions"><a class="button" id="download" href="{download}">{esc(c['download'])} · <bdi>{round(release['bytes']/1000000)} MB</bdi></a><a class="button secondary" href="#install">{esc(c['installLink'])}</a></div>
 <p class="note">{esc(c['free'])}</p><p class="note">{esc(c['updateNote'])}</p>
+<section class="card release-updates" aria-labelledby="release-updates-heading">
+<div><h2 id="release-updates-heading">{esc(c['telegram_heading'])}</h2><p>{esc(c['telegram_intro'])}</p></div>
+<a class="button secondary" href="https://t.me/byd_localized" target="_blank" rel="noopener noreferrer">{esc(c['telegram_subscribe'])}</a>
+</section>
 <section class="gallery" aria-labelledby="screenshots"><h2 id="screenshots">{esc(c['galleryTitle'])}</h2><p class="note">{esc(c['galleryNote'])}</p><div class="screens">{gallery}</div></section>
 <section class="card" id="install" aria-labelledby="install-heading"><h2 id="install-heading">{esc(c['installTitle'])}</h2><ol>{lis('installSteps')}</ol><p>{esc(c['existing'])}</p><p class="note">{esc(c['original'])}</p></section>
 <section class="card" id="walkup" aria-labelledby="walkup-heading"><h2 id="walkup-heading">{esc(c['setupTitle'])}</h2><ol>{lis('setupSteps')}</ol><p class="note">{esc(c['setupNote'])}</p></section>

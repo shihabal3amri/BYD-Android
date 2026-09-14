@@ -20,7 +20,7 @@ def main():
     r=json.loads((ROOT/'release.json').read_text(encoding='utf-8'))
     assert r['status']=='public' and re.fullmatch('[0-9a-f]{64}',r['sha256'])
     expected='https://github.com/shihabal3amri/BYD-Android/releases/download/'+r['tag']+'/'+r['file']
-    for sub,lang in [('', 'en'),('ar','ar'),('ru','ru')]:
+    for sub,lang in [('', 'en'),('ar','ar'),('ru','ru'),('es','es'),('zh-Hans','zh-Hans')]:
         f=ROOT/sub/'index.html';s=f.read_text(encoding='utf-8');p=Page();p.feed(s)
         assert p.lang==lang and p.direction==('rtl' if lang=='ar' else 'ltr')
         assert p.downloads==[expected] and p.images==5+len(json.loads((ROOT/'supporters.json').read_text(encoding='utf-8')))
@@ -36,5 +36,5 @@ def main():
     if len(sys.argv)>1:
         a=Path(sys.argv[1]);assert a.name==r['file'] and a.stat().st_size==r['bytes']
         assert hashlib.sha256(a.read_bytes()).hexdigest()==r['sha256']
-    print('PASS: EN/AR/RU, RTL, download targets, local links, image metadata and release metadata')
+    print('PASS: EN/AR/RU/ES/zh-Hans, RTL, download targets, local links, image metadata and release metadata')
 if __name__=='__main__':main()

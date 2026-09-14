@@ -2,19 +2,19 @@
 
 [English](README.md) · [العربية](README.ar.md) · [Русский](README.ru.md)
 
-**BYD Android 9.16.1 · Walk-up Unlock v2.1**
+**BYD Android 9.16.1 · September 2026 Update**
 
 Public release of the localized BYD Android app. Download the APK below or use the download page.
 
-[**Download APK**](https://github.com/shihabal3amri/BYD-Android/releases/download/v9.16.1-v2.1/BYD-Android_9.16.1_v2.1.apk) · [BYD Android Localized · Download](https://shihabal3amri.github.io/BYD-Android/) · [Report a problem](https://github.com/shihabal3amri/BYD-Android/issues/new?template=bug-report.yml)
+[**Download APK**](https://github.com/shihabal3amri/BYD-Android/releases/download/v9.16.1-20260914/BYD-Android_9.16.1_20260914.apk) · [BYD Android Localized · Download](https://shihabal3amri.github.io/BYD-Android/) · [Report a problem](https://github.com/shihabal3amri/BYD-Android/issues/new?template=bug-report.yml)
 
 ## What’s in this release
 
-- BYD 9.16.1 with English, Arabic and Russian localization.
-- Walk-up Unlock v2.1 with a modern interface, background detection and distance calibration.
-- Compatibility improvements for Bluetooth keys with changing radio addresses and Samsung detection setup.
-- Surround View improvements: old camera requests cannot interrupt a new session, with limited automatic recovery for temporary startup failures.
-- Customizable bottom tabs and the existing battery-conscious detection design.
+- English, Arabic, Russian, Spanish and original-text Simplified Chinese mode.
+- Signed translation packs with independent manual downloads; automatic updates default off. Fully close and reopen BYD to apply.
+- Redesigned Translations panel with proper Arabic RTL layout and last-check timestamps in the selected language.
+- Translation fixes including OTP resend messages, while preserving existing Walk-up, Bluetooth and Surround View behavior.
+- Distance calibration, optional walk-away locking and bottom-tab customization retained; the Walk-up feature version is unchanged.
 
 ## Inside the app
 
@@ -29,7 +29,7 @@ Public release of the localized BYD Android app. Download the APK below or use t
 2. If Android asks, allow this browser or file manager to install apps, then follow the installer.
 3. Open BYD and sign in to your own account. Go to Me → Settings to choose your language and bottom tabs.
 
-Updating a compatible project build? Keep your existing app and install over it to preserve local settings. This release uses the same project signing key.
+Updating a compatible project build? Keep the app and install over it to retain local settings. This release uses the same signing key. You may need to sign in again.
 
 Using the original BYD app? Uninstall it before installing this APK because the signing keys differ. Uninstalling removes its local data; you may need to sign in and set up your Bluetooth key again.
 
@@ -47,17 +47,17 @@ Manual thresholds remain available. Calibration pauses automatic commands. Signa
 
 Use a 64-bit ARM Android phone. The added Bluetooth detection uses Android 8+ APIs; Android Companion detection requires Android 12+ and device support. A working BYD Bluetooth key is required for automatic unlocking.
 
-Some live content and artwork remain in Chinese. Background behavior and vehicle features vary by phone and car. After force-stopping BYD, open it again to resume detection. Camera startup still depends on the vehicle and BYD’s service.
+Spanish remains a draft. Some live content and artwork remain Chinese. Background behavior and available features vary by phone and car. Reopen BYD after force-stopping it to resume detection. Camera startup depends on the vehicle and BYD service.
 
 Something not working? Include your phone, Android version, car model, app version and steps to reproduce. Remove account details, VINs and locations from screenshots or logs.
 
 ## Downloads and verification
 
-[Release notes & checksums](https://github.com/shihabal3amri/BYD-Android/releases/tag/v9.16.1-v2.1) · [release.json](release.json)
+[Release notes & checksums](https://github.com/shihabal3amri/BYD-Android/releases/tag/v9.16.1-20260914) · [release.json](release.json)
 
-`BYD-Android_9.16.1_v2.1.apk` · 373,776,939 bytes
+`BYD-Android_9.16.1_20260914.apk` · 375,288,531 bytes
 
-SHA-256: `72acb292b37a13b8351e4f5570d656b71f18f27c6fb624666806024c89145844`
+SHA-256: `b41484116028f751774d51f42f108be7aed39afd136f22bfa324026d587beca1`
 
 ## Maintaining this download page
 

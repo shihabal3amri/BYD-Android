@@ -3,20 +3,47 @@
   "supporters_intro": "Thank you to the communities supporting this project.",
   "supporter_label": "Community supporter",
   "supporter_follow": "Follow the community",
-  "lang": "en", "dir": "ltr", "readme": "README.md",
+  "lang": "en",
+  "dir": "ltr",
+  "readme": "README.md",
   "title": "BYD Android Localized · Download",
-  "description": "Download the localized BYD Android app in English, Arabic and Russian, with Walk-up Unlock v2.1, distance calibration and optional walk-away locking.",
-  "community": "Unofficial community project", "language": "Page language", "badge": "PUBLIC RELEASE",
+  "description": "BYD Android in English, Arabic, Russian, Spanish and Simplified Chinese, with signed translation updates and optional proximity features.",
+  "community": "Unofficial community project",
+  "language": "Page language",
+  "badge": "PUBLIC RELEASE",
   "headline": "Your BYD app.<br>Your language.",
-  "intro": "The Chinese BYD Android app in English, العربية and Русский. Make it yours with Walk-up Unlock v2.1, optional locking when you walk away, and customizable bottom tabs.",
-  "download": "Download APK", "installLink": "How to install", "free": "Free download · Direct APK installation · No root required",
+  "intro": "BYD Android now includes Spanish and Simplified Chinese alongside English, Arabic and Russian. Download translations from Settings, customize bottom tabs and retain existing optional Walk-up features. Spanish remains a draft.",
+  "download": "Download APK",
+  "installLink": "How to install",
+  "free": "Free download · Direct APK installation · No root required",
   "updateNote": "Already using a compatible build from this project? Install the update over it. If you have the original BYD app, uninstall it first.",
-  "galleryTitle": "Inside the app", "galleryNote": "Screenshots supplied by the maintainer. Tap an image to view it full size.",
+  "galleryTitle": "Inside the app",
+  "galleryNote": "Screenshots supplied by the maintainer. Tap an image to view it full size.",
   "screens": [
-    ["dashboard.jpg", "My Vehicle dashboard with Bluetooth controls", "Your car, at a glance", "A familiar dashboard in your language."],
-    ["walkup-setup.jpg", "Walk-up unlock settings with background detection, distance calibration and manual thresholds", "Choose your approach", "Background detection, calibration and optional locking."],
-    ["settings.jpg", "Settings with Language, Bottom bar and Walk-up unlock entries", "Make it yours", "Language, bottom tabs and Walk-up unlock in Settings."],
-    ["profile.jpg", "BYD profile page and vehicle card", "A familiar BYD experience", "Your profile and vehicle features in one place."]
+    [
+      "dashboard.jpg",
+      "My Vehicle dashboard with Bluetooth controls",
+      "Your car, at a glance",
+      "A familiar dashboard in your language."
+    ],
+    [
+      "walkup-setup.jpg",
+      "Walk-up unlock settings with background detection, distance calibration and manual thresholds",
+      "Choose your approach",
+      "Background detection, calibration and optional locking."
+    ],
+    [
+      "settings.jpg",
+      "Settings with Language, Bottom bar and Walk-up unlock entries",
+      "Make it yours",
+      "Language, bottom tabs and Walk-up unlock in Settings."
+    ],
+    [
+      "profile.jpg",
+      "BYD profile page and vehicle card",
+      "A familiar BYD experience",
+      "Your profile and vehicle features in one place."
+    ]
   ],
   "installTitle": "1. Install or update",
   "installSteps": [
@@ -24,7 +51,7 @@
     "If Android asks, allow this browser or file manager to install apps, then follow the installer.",
     "Open BYD and sign in to your own account. Go to Me → Settings to choose your language and bottom tabs."
   ],
-  "existing": "Updating a compatible project build? Keep your existing app and install over it to preserve local settings. This release uses the same project signing key.",
+  "existing": "Updating a compatible project build? Keep the app and install over it to retain local settings. This release uses the same signing key. You may need to sign in again.",
   "original": "Using the original BYD app? Uninstall it before installing this APK because the signing keys differ. Uninstalling removes its local data; you may need to sign in and set up your Bluetooth key again.",
   "setupTitle": "2. Set up Walk-up unlock",
   "setupSteps": [
@@ -37,21 +64,25 @@
   "setupNote": "Manual thresholds remain available. Calibration pauses automatic commands. Signal strength varies with pockets and surroundings; it measures signal, not an exact distance in metres.",
   "newTitle": "What’s in this release",
   "features": [
-    "BYD 9.16.1 with English, Arabic and Russian localization.",
-    "Walk-up Unlock v2.1 with a modern interface, background detection and distance calibration.",
-    "Compatibility improvements for Bluetooth keys with changing radio addresses and Samsung detection setup.",
-    "Surround View improvements: old camera requests cannot interrupt a new session, with limited automatic recovery for temporary startup failures.",
-    "Customizable bottom tabs and the existing battery-conscious detection design."
+    "English, Arabic, Russian, Spanish and original-text Simplified Chinese mode.",
+    "Signed translation packs with independent manual downloads; automatic updates default off. Fully close and reopen BYD to apply.",
+    "Redesigned Translations panel with proper Arabic RTL layout and last-check timestamps in the selected language.",
+    "Translation fixes including OTP resend messages, while preserving existing Walk-up, Bluetooth and Surround View behavior.",
+    "Distance calibration, optional walk-away locking and bottom-tab customization retained; the Walk-up feature version is unchanged."
   ],
   "compatTitle": "Compatibility & feedback",
   "compat": "Use a 64-bit ARM Android phone. The added Bluetooth detection uses Android 8+ APIs; Android Companion detection requires Android 12+ and device support. A working BYD Bluetooth key is required for automatic unlocking.",
-  "limitations": "Some live content and artwork remain in Chinese. Background behavior and vehicle features vary by phone and car. After force-stopping BYD, open it again to resume detection. Camera startup still depends on the vehicle and BYD’s service.",
+  "limitations": "Spanish remains a draft. Some live content and artwork remain Chinese. Background behavior and available features vary by phone and car. Reopen BYD after force-stopping it to resume detection. Camera startup depends on the vehicle and BYD service.",
   "feedback": "Something not working? Include your phone, Android version, car model, app version and steps to reproduce. Remove account details, VINs and locations from screenshots or logs.",
-  "report": "Report a problem", "notes": "Release notes & checksums", "repository": "Project & instructions", "ios": "Looking for the iPhone version?",
+  "report": "Report a problem",
+  "notes": "Release notes & checksums",
+  "repository": "Project & instructions",
+  "ios": "Looking for the iPhone version?",
   "footer": "Unofficial project, not affiliated with or endorsed by BYD. BYD’s original application and assets belong to their respective owners.",
-  "releaseTitle": "BYD Android 9.16.1 · Walk-up Unlock v2.1",
+  "releaseTitle": "BYD Android 9.16.1 · September 2026 Update",
   "notesIntro": "Public release of the localized BYD Android app. Download the APK below or use the download page.",
-  "checksum": "Downloads and verification", "maintainer": "Maintaining this download page",
+  "checksum": "Downloads and verification",
+  "maintainer": "Maintaining this download page",
   "telegram_heading": "Get release updates",
   "telegram_intro": "Subscribe to our Telegram channel and turn on notifications to hear when a new version is released.",
   "telegram_subscribe": "Subscribe on Telegram"

@@ -1,0 +1,89 @@
+{
+  "lang": "es",
+  "dir": "ltr",
+  "readme": "README.es.md",
+  "title": "BYD Android traducido · Descargar",
+  "description": "BYD Android en inglés, árabe, ruso, español y chino simplificado, con paquetes de traducción firmados y controles opcionales de proximidad.",
+  "language": "Idioma de la página",
+  "badge": "VERSIÓN PÚBLICA",
+  "headline": "Tu aplicación BYD.<br>Tu idioma.",
+  "intro": "BYD Android ahora también incluye español y chino simplificado, además de inglés, árabe y ruso. Descarga traducciones desde Ajustes, personaliza las pestañas y conserva las funciones opcionales de proximidad. El español sigue en revisión.",
+  "download": "Descargar APK",
+  "installLink": "Cómo instalar",
+  "free": "Descarga gratuita · Instalación directa del APK · Sin root",
+  "updateNote": "Si usas una versión compatible de este proyecto, instala encima. La aplicación original de BYD usa otra firma y debe desinstalarse antes; eso elimina sus datos locales.",
+  "galleryTitle": "Dentro de la aplicación",
+  "galleryNote": "Capturas facilitadas por el mantenedor de versiones anteriores. Toca para ampliarlas.",
+  "screens": [
+    [
+      "dashboard.jpg",
+      "Panel del vehículo con controles Bluetooth",
+      "Tu coche, de un vistazo",
+      "El panel de siempre en tu idioma."
+    ],
+    [
+      "walkup-setup.jpg",
+      "Ajustes de proximidad, detección en segundo plano y calibración",
+      "Configura la proximidad",
+      "Detección, calibración y bloqueo opcional."
+    ],
+    [
+      "settings.jpg",
+      "Ajustes de idioma, barra inferior y proximidad",
+      "Personalízala",
+      "Tus preferencias en Ajustes."
+    ],
+    [
+      "profile.jpg",
+      "Perfil BYD y tarjeta del vehículo",
+      "La experiencia BYD",
+      "Tu perfil y las funciones de tu coche."
+    ]
+  ],
+  "installTitle": "1. Instala o actualiza",
+  "installSteps": [
+    "Descarga el APK en tu teléfono Android y abre el archivo.",
+    "Si Android lo solicita, permite a ese navegador o gestor de archivos instalar aplicaciones y sigue las instrucciones.",
+    "Abre BYD e inicia sesión con tu cuenta. En Yo → Ajustes puedes elegir idioma y pestañas."
+  ],
+  "existing": "¿Actualizas una versión compatible del proyecto? Conserva la aplicación e instala encima para mantener los ajustes locales. Se utiliza la misma clave de firma del proyecto; puede ser necesario iniciar sesión de nuevo.",
+  "original": "Si usas la aplicación original de BYD, desinstálala primero porque las firmas difieren. Esto elimina sus datos locales; puede que debas iniciar sesión y configurar de nuevo la llave Bluetooth.",
+  "setupTitle": "2. Configura el desbloqueo por proximidad",
+  "setupSteps": [
+    "Confirma que tu llave Bluetooth BYD puede bloquear y desbloquear el coche manualmente.",
+    "Abre Yo → Ajustes → Desbloqueo por proximidad y activa la función. Permite el acceso a dispositivos cercanos y mantén Bluetooth encendido.",
+    "En Detección en segundo plano, sigue las instrucciones para tu llave. Las llaves compatibles de dirección fija usan la configuración de detección del coche de Android; las de dirección variable usan detección de emisiones.",
+    "Pulsa Calibrar distancias. Mide las posiciones de desbloqueo y bloqueo llevando el teléfono como de costumbre y guarda.",
+    "Activa Bloquear al alejarse si lo deseas. Usa Mantener preparado para configurar la actividad en segundo plano del teléfono."
+  ],
+  "setupNote": "Puedes seguir usando umbrales manuales. La calibración pausa las acciones automáticas. Los bolsillos y el entorno afectan a la señal; no es una medición exacta en metros.",
+  "newTitle": "Novedades de esta versión",
+  "features": [
+    "BYD 9.16.1 con inglés, árabe, ruso, español y modo de texto original en chino simplificado.",
+    "Paquetes de traducción firmados: actualización manual independiente y actualización automática desactivada por defecto. Cierra completamente BYD y vuelve a abrirla para aplicar.",
+    "Panel de traducciones renovado, con diseño de derecha a izquierda para árabe y fecha de última comprobación en el idioma elegido.",
+    "Correcciones de traducción, incluidos mensajes de reenvío de códigos, manteniendo las funciones de proximidad y cámaras existentes.",
+    "Se conservan la calibración, el bloqueo opcional al alejarse y las pestañas personalizables; no se cambia la versión de la función de proximidad."
+  ],
+  "compatTitle": "Compatibilidad y comentarios",
+  "compat": "Requiere un teléfono Android ARM de 64 bits. La detección Bluetooth añadida usa API de Android 8 o posterior; la detección Companion requiere Android 12 o posterior y soporte del dispositivo. El desbloqueo automático necesita una llave Bluetooth BYD funcional.",
+  "limitations": "El español sigue en revisión. Algunos contenidos e imágenes permanecen en chino. El funcionamiento en segundo plano y las funciones disponibles dependen del teléfono y del coche. Tras forzar el cierre, abre BYD para reanudar la detección. Las cámaras dependen del vehículo y del servicio BYD.",
+  "feedback": "Incluye teléfono, versión de Android, modelo del coche, versión de la aplicación y pasos para reproducir el problema. Retira datos de cuenta, VIN y ubicaciones de las capturas y registros.",
+  "report": "Informar de un problema",
+  "notes": "Notas y sumas de verificación",
+  "repository": "Proyecto e instrucciones",
+  "ios": "¿Buscas la versión para iPhone?",
+  "releaseTitle": "BYD Android 9.16.1 · Actualización de septiembre de 2026",
+  "notesIntro": "Actualización pública del BYD Android traducido. Descarga el APK o visita la página de descarga.",
+  "checksum": "Descargas y verificación",
+  "maintainer": "Mantenimiento de esta página",
+  "supporters_heading": "Nuestras comunidades de apoyo",
+  "supporters_intro": "Gracias a las comunidades que apoyan este proyecto.",
+  "supporter_label": "Comunidad colaboradora",
+  "supporter_follow": "Seguir a la comunidad",
+  "community": "Proyecto comunitario no oficial",
+  "telegram_heading": "Recibe novedades",
+  "telegram_intro": "Suscríbete a nuestro canal de Telegram y activa las notificaciones para enterarte de nuevas versiones.",
+  "telegram_subscribe": "Suscribirse en Telegram",
+  "footer": "Proyecto no oficial, sin afiliación ni respaldo de BYD. La aplicación y los recursos originales pertenecen a sus propietarios."
+}

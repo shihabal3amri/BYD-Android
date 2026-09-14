@@ -1,4 +1,4 @@
-"""Render all three static language pages from content and release.json."""
+"""Render all five static language pages from content and release.json."""
 from pathlib import Path
 import html,json
 ROOT=Path(__file__).resolve().parents[1]
@@ -26,7 +26,7 @@ def main():
     release=json.loads((ROOT/'release.json').read_text(encoding='utf-8'))
     tag=release['tag'];download=REPO+'/releases/download/'+tag+'/'+release['file']
     release_url=REPO+'/releases/tag/'+tag
-    languages=[('en','English',''),('ar','العربية','ar/'),('ru','Русский','ru/')]
+    languages=[('en','English',''),('ar','العربية','ar/'),('ru','Русский','ru/'),('es','Español','es/'),('zh-Hans','简体中文','zh-Hans/')]
     supporters=json.loads((ROOT/'supporters.json').read_text(encoding='utf-8'))
     notes=[]
     for lang,label,sub in languages:
@@ -134,5 +134,5 @@ original BYD app source, signing keys, user logs or account data.
         (ROOT/c['readme']).write_text(readme,encoding='utf-8',newline='\n')
         notes.append(f"## {label}\n\n{c['notesIntro']}\n\n{bullets('features')}\n\n{c['updateNote']}\n\n{c['original']}\n\n[{c['installLink']}]({SITE}{sub}#install) · [{c['report']}]({ISSUES})\n")
     (ROOT/'CHANGELOG.md').write_text(f"# {release['title']}\n\n"+'\n'.join(notes),encoding='utf-8',newline='\n')
-    print('Rendered EN, AR, RU pages, READMEs and release notes')
+    print('Rendered EN, AR, RU, ES, zh-Hans pages, READMEs and release notes')
 if __name__=='__main__':main()

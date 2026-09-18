@@ -69,3 +69,7 @@ html[dir="rtl"] .screens figcaption { line-height: 1.75; }
 .supporter h3 { margin: 3px 0 0; font-size: 24px; line-height: 1.5; }
 .supporter-follow { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 10px 16px; border: 1px solid #e4aab2; border-radius: 10px; background: #fff1f3; color: #a40012; font-size: 14px; font-weight: 650; text-align: center; }
 @media (max-width: 700px) { .supporter { grid-template-columns: 108px minmax(0, 1fr); gap: 16px; padding: 20px; } .supporter-logo { width: 108px; height: 83px; } .supporter-follow { grid-column: 1 / -1; } }
+
+/* Crop the supplied TheBitBus banner to its bus emblem without altering the artwork. */
+.supporter-logo-crop { width: 110px; height: 110px; object-fit: cover; object-position: 26% center; }
+@media (max-width: 700px) { .supporter-logo-crop { width: 83px; height: 83px; } }

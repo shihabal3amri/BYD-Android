@@ -1,6 +1,6 @@
 {
   "supporters_heading": "Our supporters",
-  "supporters_intro": "Thank you to the communities supporting this project.",
+  "supporters_intro": "Thank you to the communities and creators supporting this project.",
   "supporter_label": "Community supporter",
   "supporter_follow": "Follow the community",
   "lang": "en",
@@ -85,5 +85,7 @@
   "maintainer": "Maintaining this download page",
   "telegram_heading": "Get release updates",
   "telegram_intro": "Subscribe to our Telegram channel and turn on notifications to hear when a new version is released.",
-  "telegram_subscribe": "Subscribe on Telegram"
+  "telegram_subscribe": "Subscribe on Telegram",
+  "supporter_creator": "Tutorial creator",
+  "supporter_channel": "Visit the channel"
 }

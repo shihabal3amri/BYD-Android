@@ -78,12 +78,14 @@
   "checksum": "Descargas y verificación",
   "maintainer": "Mantenimiento de esta página",
   "supporters_heading": "Nuestras comunidades de apoyo",
-  "supporters_intro": "Gracias a las comunidades que apoyan este proyecto.",
+  "supporters_intro": "Gracias a las comunidades y a los creadores que apoyan este proyecto.",
   "supporter_label": "Comunidad colaboradora",
   "supporter_follow": "Seguir a la comunidad",
   "community": "Proyecto comunitario no oficial",
   "telegram_heading": "Recibe novedades",
   "telegram_intro": "Suscríbete a nuestro canal de Telegram y activa las notificaciones para enterarte de nuevas versiones.",
   "telegram_subscribe": "Suscribirse en Telegram",
-  "footer": "Proyecto no oficial, sin afiliación ni respaldo de BYD. La aplicación y los recursos originales pertenecen a sus propietarios."
+  "footer": "Proyecto no oficial, sin afiliación ni respaldo de BYD. La aplicación y los recursos originales pertenecen a sus propietarios.",
+  "supporter_creator": "Creador de tutoriales",
+  "supporter_channel": "Visitar el canal"
 }

@@ -78,12 +78,14 @@
   "checksum": "下载与校验",
   "maintainer": "维护此下载页面",
   "supporters_heading": "支持我们的社区",
-  "supporters_intro": "感谢各社区对本项目的支持。",
+  "supporters_intro": "感谢支持本项目的社区和内容创作者。",
   "supporter_label": "支持社区",
   "supporter_follow": "关注社区",
   "community": "非官方社区项目",
   "telegram_heading": "接收版本更新通知",
   "telegram_intro": "订阅 Telegram 频道并开启通知，及时了解新版本。",
   "telegram_subscribe": "订阅 Telegram",
-  "footer": "本项目为非官方项目，与比亚迪无隶属关系，也未获得其认可。原版应用及资源属于各自所有者。"
+  "footer": "本项目为非官方项目，与比亚迪无隶属关系，也未获得其认可。原版应用及资源属于各自所有者。",
+  "supporter_creator": "教程创作者",
+  "supporter_channel": "访问频道"
 }

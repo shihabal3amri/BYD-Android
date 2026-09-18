@@ -12,9 +12,9 @@ def render_supporters(items, content, prefix):
     cards = []
     for item in items:
         cards.append(f'''<li><a class="supporter" href="{esc(item['url'])}" target="_blank" rel="noopener noreferrer">
-<img class="supporter-logo" src="{prefix}{esc(item['logo'])}" width="{item['width']}" height="{item['height']}" alt="{esc(item['name'])}" loading="lazy">
-<div class="supporter-info"><span class="supporter-label">{esc(content['supporter_label'])}</span><h3><bdi dir="ltr">{esc(item['name'])}</bdi></h3></div>
-<span class="supporter-follow">{esc(content['supporter_follow'])}<span aria-hidden="true">↗</span></span>
+<img class="supporter-logo{' supporter-logo-crop' if item.get('crop') else ''}" src="{prefix}{esc(item['logo'])}" width="{item['width']}" height="{item['height']}" alt="{esc(item['name'])}" loading="lazy">
+<div class="supporter-info"><span class="supporter-label">{esc(content['supporter_creator'] if item.get('kind')=='creator' else content['supporter_label'])}</span><h3><bdi dir="ltr">{esc(item['name'])}</bdi></h3></div>
+<span class="supporter-follow">{esc(content['supporter_channel'] if item.get('kind')=='creator' else content['supporter_follow'])}<span aria-hidden="true">↗</span></span>
 </a></li>''')
     return f'''<section class="supporters" id="supporters" aria-labelledby="supporters-heading">
 <h2 id="supporters-heading">{esc(content['supporters_heading'])}</h2>

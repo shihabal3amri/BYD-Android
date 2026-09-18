@@ -5,5 +5,22 @@
     "logo": "assets/byd-arab.png",
     "width": 571,
     "height": 437
+  },
+  {
+    "name": "Ahmed Nabil · BYD HUB",
+    "url": "https://www.youtube.com/@dranabil",
+    "logo": "assets/ahmed-nabil.png",
+    "width": 1254,
+    "height": 1254,
+    "kind": "creator"
+  },
+  {
+    "name": "Eng Omar Mustafa · TheBitBus",
+    "url": "https://www.youtube.com/@TheBitBus",
+    "logo": "assets/thebitbus-banner.jpg",
+    "width": 1707,
+    "height": 282,
+    "kind": "creator",
+    "crop": true
   }
 ]

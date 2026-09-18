@@ -1,6 +1,6 @@
 {
   "supporters_heading": "Нас поддерживают",
-  "supporters_intro": "Спасибо сообществам, которые поддерживают этот проект.",
+  "supporters_intro": "Спасибо сообществам и авторам, поддерживающим этот проект.",
   "supporter_label": "Сообщество, поддерживающее проект",
   "supporter_follow": "Перейти в сообщество",
   "lang": "ru",
@@ -85,5 +85,7 @@
   "maintainer": "Обновление страницы загрузки",
   "telegram_heading": "Узнавайте о новых версиях",
   "telegram_intro": "Подпишитесь на наш Telegram-канал и включите уведомления, чтобы узнавать о выходе новых версий.",
-  "telegram_subscribe": "Подписаться в Telegram"
+  "telegram_subscribe": "Подписаться в Telegram",
+  "supporter_creator": "Автор видеоуроков",
+  "supporter_channel": "Перейти на канал"
 }

@@ -1,6 +1,6 @@
 {
   "supporters_heading": "داعمونا",
-  "supporters_intro": "شكراً للمجتمعات التي تدعم هذا المشروع.",
+  "supporters_intro": "شكراً للمجتمعات وصنّاع المحتوى الذين يدعمون هذا المشروع.",
   "supporter_label": "مجتمع داعم",
   "supporter_follow": "تابع المجتمع",
   "lang": "ar",
@@ -85,5 +85,7 @@
   "maintainer": "صيانة صفحة التنزيل",
   "telegram_heading": "تابع آخر التحديثات",
   "telegram_intro": "اشترك في قناتنا على تيليجرام وفعّل الإشعارات ليصلك تنبيه عند إصدار تحديث جديد.",
-  "telegram_subscribe": "اشترك في قناة تيليجرام"
+  "telegram_subscribe": "اشترك في قناة تيليجرام",
+  "supporter_creator": "صانع محتوى تعليمي",
+  "supporter_channel": "زيارة القناة"
 }
